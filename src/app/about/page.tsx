@@ -62,17 +62,12 @@ export default function AboutUs() {
             <div className="relative">
               <div className="aged-paper p-4 decorative-border">
                 <div className="relative h-96 w-full rounded-lg overflow-hidden">
-                  <video 
-                    className="w-full h-full object-cover"
-                    autoPlay 
-                    loop 
-                    muted 
-                    playsInline
-                  >
-                    <source src="/assets/video/butterfly.mp4" type="video/mp4" />
-                    <source src="/assets/video/waterfall.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
+                  <Image 
+                    src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                    alt="Ayurvedic herbs and spices"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -188,91 +183,24 @@ export default function AboutUs() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative">
               <div className="aged-paper p-4 decorative-border">
-                                 <div className="relative h-96 w-full rounded-lg overflow-hidden bg-gradient-to-br from-blue-50 to-green-50">
-                   {/* Accurate SVG World Map */}
-                   <svg 
-                     viewBox="0 0 1000 500" 
-                     className="w-full h-full"
-                     style={{background: 'linear-gradient(135deg, #f0f8ff 0%, #f0fff0 100%)'}}
-                   >
-                     {/* North America */}
-                     <path d="M 150 150 L 200 140 L 250 150 L 300 140 L 350 150 L 400 140 L 450 150 L 500 140 L 550 150 L 600 140 L 650 150 L 700 140 L 750 150 L 800 140 L 850 150 L 900 140 L 950 150 L 950 200 L 900 210 L 850 200 L 800 210 L 750 200 L 700 210 L 650 200 L 600 210 L 550 200 L 500 210 L 450 200 L 400 210 L 350 200 L 300 210 L 250 200 L 200 210 L 150 200 Z" 
-                           fill="#e8dcc0" stroke="#8b4513" strokeWidth="1"/>
-                     
-                     {/* South America */}
-                     <path d="M 300 250 L 350 240 L 400 250 L 450 240 L 500 250 L 550 240 L 600 250 L 650 240 L 700 250 L 750 240 L 800 250 L 850 240 L 900 250 L 950 240 L 950 350 L 900 360 L 850 350 L 800 360 L 750 350 L 700 360 L 650 350 L 600 360 L 550 350 L 500 360 L 450 350 L 400 360 L 350 350 L 300 360 Z" 
-                           fill="#d4c4a8" stroke="#8b4513" strokeWidth="1"/>
-                     
-                     {/* Europe */}
-                     <path d="M 450 120 L 500 110 L 550 120 L 600 110 L 650 120 L 700 110 L 750 120 L 800 110 L 850 120 L 900 110 L 950 120 L 950 180 L 900 190 L 850 180 L 800 190 L 750 180 L 700 190 L 650 180 L 600 190 L 550 180 L 500 190 L 450 180 Z" 
-                           fill="#e8dcc0" stroke="#8b4513" strokeWidth="1"/>
-                     
-                     {/* Africa */}
-                     <path d="M 450 200 L 500 190 L 550 200 L 600 190 L 650 200 L 700 190 L 750 200 L 800 190 L 850 200 L 900 190 L 950 200 L 950 350 L 900 360 L 850 350 L 800 360 L 750 350 L 700 360 L 650 350 L 600 360 L 550 350 L 500 360 L 450 350 Z" 
-                           fill="#d4c4a8" stroke="#8b4513" strokeWidth="1"/>
-                     
-                     {/* Asia */}
-                     <path d="M 600 120 L 650 110 L 700 120 L 750 110 L 800 120 L 850 110 L 900 120 L 950 110 L 950 200 L 900 210 L 850 200 L 800 210 L 750 200 L 700 210 L 650 200 L 600 210 Z" 
-                           fill="#e8dcc0" stroke="#8b4513" strokeWidth="1"/>
-                     
-                     {/* Australia */}
-                     <path d="M 750 300 L 800 290 L 850 300 L 900 290 L 950 300 L 950 350 L 900 360 L 850 350 L 800 360 L 750 350 Z" 
-                           fill="#d4c4a8" stroke="#8b4513" strokeWidth="1"/>
-                     
-                     {/* India - More Accurate Position */}
-                     <circle cx="700" cy="220" r="10" fill="#b8860b" stroke="#8b0000" strokeWidth="3">
-                       <animate attributeName="r" values="10;15;10" dur="2s" repeatCount="indefinite"/>
-                     </circle>
-                     <text x="700" y="240" textAnchor="middle" fill="#8b0000" fontSize="14" fontWeight="bold">India</text>
-                     
-                     {/* USA - More Accurate Position */}
-                     <circle cx="250" cy="170" r="10" fill="#b8860b" stroke="#8b0000" strokeWidth="3">
-                       <animate attributeName="r" values="10;15;10" dur="2s" repeatCount="indefinite" begin="0.5s"/>
-                     </circle>
-                     <text x="250" y="190" textAnchor="middle" fill="#8b0000" fontSize="14" fontWeight="bold">USA</text>
-                     
-                     {/* Saudi Arabia - More Accurate Position */}
-                     <circle cx="550" cy="200" r="10" fill="#b8860b" stroke="#8b0000" strokeWidth="3">
-                       <animate attributeName="r" values="10;15;10" dur="2s" repeatCount="indefinite" begin="1s"/>
-                     </circle>
-                     <text x="550" y="220" textAnchor="middle" fill="#8b0000" fontSize="14" fontWeight="bold">Saudi Arabia</text>
-                     
-                     {/* Global Expansion Markers */}
-                     <circle cx="400" cy="150" r="8" fill="#556b2f" stroke="#8b0000" strokeWidth="2">
-                       <animate attributeName="r" values="8;12;8" dur="3s" repeatCount="indefinite" begin="1.5s"/>
-                     </circle>
-                     <circle cx="600" cy="180" r="8" fill="#556b2f" stroke="#8b0000" strokeWidth="2">
-                       <animate attributeName="r" values="8;12;8" dur="3s" repeatCount="indefinite" begin="2s"/>
-                     </circle>
-                     <circle cx="800" cy="250" r="8" fill="#556b2f" stroke="#8b0000" strokeWidth="2">
-                       <animate attributeName="r" values="8;12;8" dur="3s" repeatCount="indefinite" begin="2.5s"/>
-                     </circle>
-                     <circle cx="850" cy="320" r="8" fill="#556b2f" stroke="#8b0000" strokeWidth="2">
-                       <animate attributeName="r" values="8;12;8" dur="3s" repeatCount="indefinite" begin="3s"/>
-                     </circle>
-                     
-                     {/* Ocean/Water Elements */}
-                     <path d="M 0 0 L 1000 0 L 1000 500 L 0 500 Z" fill="none" stroke="#4a90e2" strokeWidth="1" opacity="0.3"/>
-                     
-                     {/* Decorative Elements */}
-                     <circle cx="100" cy="80" r="4" fill="#b8860b" opacity="0.7"/>
-                     <circle cx="900" cy="60" r="4" fill="#b8860b" opacity="0.7"/>
-                     <circle cx="50" cy="420" r="4" fill="#b8860b" opacity="0.7"/>
-                     <circle cx="950" cy="440" r="4" fill="#b8860b" opacity="0.7"/>
-                     
-                     {/* Grid Lines for Better Orientation */}
-                     <line x1="0" y1="100" x2="1000" y2="100" stroke="#8b4513" strokeWidth="0.5" opacity="0.3"/>
-                     <line x1="0" y1="200" x2="1000" y2="200" stroke="#8b4513" strokeWidth="0.5" opacity="0.3"/>
-                     <line x1="0" y1="300" x2="1000" y2="300" stroke="#8b4513" strokeWidth="0.5" opacity="0.3"/>
-                     <line x1="0" y1="400" x2="1000" y2="400" stroke="#8b4513" strokeWidth="0.5" opacity="0.3"/>
-                   </svg>
-                  
-                  {/* Overlay with additional information */}
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <div className="bg-white bg-opacity-90 rounded-lg p-3">
-                      <p className="text-sm font-semibold text-center" style={{color: 'var(--accent-red)'}}>
-                        Global Ayurvedic Wellness Network
-                      </p>
+                                                 <div className="relative h-96 w-full rounded-lg overflow-hidden bg-gradient-to-br from-blue-50 to-green-50 flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="text-6xl mb-4">🌍</div>
+                    <h3 className="text-2xl font-bold text-gray-800 mb-2">Global Reach</h3>
+                    <p className="text-gray-600">Serving patients worldwide</p>
+                    <div className="mt-4 space-y-2">
+                      <div className="flex items-center justify-center space-x-2">
+                        <span>🇮🇳</span>
+                        <span className="text-sm">India</span>
+                      </div>
+                      <div className="flex items-center justify-center space-x-2">
+                        <span>🇺🇸</span>
+                        <span className="text-sm">United States</span>
+                      </div>
+                      <div className="flex items-center justify-center space-x-2">
+                        <span>🇸🇦</span>
+                        <span className="text-sm">Saudi Arabia</span>
+                      </div>
                     </div>
                   </div>
                 </div>
