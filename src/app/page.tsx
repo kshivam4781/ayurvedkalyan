@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
               <a href="#shop" className="aged-text hover:text-red-800 transition-colors font-medium">Shop Online</a>
               <a href="#services" className="aged-text hover:text-red-800 transition-colors font-medium">Services</a>
               <a href="#partner" className="aged-text hover:text-red-800 transition-colors font-medium">Partner with Us</a>
-              <a href="/about" className="aged-text hover:text-red-800 transition-colors font-medium">About Us</a>
+              <Link href="/about" className="aged-text hover:text-red-800 transition-colors font-medium">About Us</Link>
               <a href="#contact" className="aged-text hover:text-red-800 transition-colors font-medium">Contact Us</a>
             </div>
             <div className="lg:hidden">
