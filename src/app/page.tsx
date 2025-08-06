@@ -383,6 +383,72 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Founder Section */}
+      <section className="py-20 scroll-container">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="aged-paper p-6 mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold aged-text mb-4">
+                Meet Our Expert Physician
+              </h2>
+              <p className="aged-text max-w-2xl mx-auto">
+                Led by Dr. Praveen Rajput, a compassionate Ayurvedic physician with over 5 years of clinical experience
+              </p>
+            </div>
+          </div>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative">
+              <div className="aged-paper p-4 decorative-border">
+                <div className="relative h-96 w-full rounded-lg overflow-hidden">
+                  <Image 
+                    src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                    alt="Dr. Praveen Rajput - Ayurvedic Physician"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="text-center lg:text-left">
+              <div className="aged-paper p-8 decorative-border">
+                <h3 className="text-2xl font-bold aged-text mb-4">
+                  Dr. Praveen Rajput
+                </h3>
+                <p className="text-lg aged-text mb-4" style={{color: 'var(--accent-gold)'}}>
+                  BAMS, MD (Pursuing) - Ayurvedic Physician & Panchakarma Specialist
+                </p>
+                <div className="space-y-4 aged-text text-left">
+                  <p className="mb-4">
+                    A compassionate and result-driven Ayurvedic physician, blending traditional Ayurvedic wisdom with evidence-based clinical practice. Currently pursuing MD (Ayurveda) in Shalakya Tantra (ENT) with specialization in eye, ear, nose, and throat disorders.
+                  </p>
+                  <div className="mt-4">
+                    <h4 className="font-semibold aged-text mb-3" style={{color: 'var(--accent-red)'}}>Specialized in:</h4>
+                    <ul className="space-y-1 text-sm">
+                      <li>• Respiratory & Digestive Disorders</li>
+                      <li>• Gynecological & Male Health Concerns</li>
+                      <li>• Skin Diseases & Renal Disorders</li>
+                      <li>• Liver Disorders & Metabolic Conditions</li>
+                    </ul>
+                  </div>
+                  <p className="mt-4 text-sm">
+                    Expert in Panchakarma therapies including Nasya, Vamana, Basti, Netra Tarpana, Shirodhara, and specialized ENT procedures. Completed prestigious Certificate of Rashtriya Ayurveda Vidyapeeth (CRAV).
+                  </p>
+                </div>
+                <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                  <Link href="/about" className="btn-aged px-6 py-2 text-sm">
+                    Learn More
+                  </Link>
+                  <button className="btn-aged px-6 py-2 text-sm" style={{background: 'transparent', border: '2px solid var(--accent-gold)', color: 'var(--ink-dark)'}}>
+                    Book Consultation
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-20 scroll-container">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

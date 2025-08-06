@@ -121,23 +121,30 @@ export default function AboutUs() {
                   Dr. Praveen Rajput
                 </h3>
                 <p className="text-lg aged-text mb-4" style={{color: 'var(--accent-gold)'}}>
-                  BAMS, CARC - Ayurvedic Physician & Panchakarma Specialist
+                  BAMS, MD (Pursuing) - Ayurvedic Physician & Panchakarma Specialist
                 </p>
                 <div className="space-y-4 aged-text text-left">
-                  <p>
-                    <strong>Education:</strong> Bachelor of Ayurvedic Medicine and Surgery (BAMS) from India
+                  <p className="mb-4">
+                    Dr. Praveen Rajput is a compassionate and result-driven Ayurvedic physician, blending traditional Ayurvedic wisdom with evidence-based clinical practice. She holds a Bachelor of Ayurvedic Medicine and Surgery (B.A.M.S) from Major S.D. Singh Ayurvedic Medical College and is currently pursuing her MD (Ayurveda) in Shalakya Tantra (ENT), with a specialization in the Ayurvedic management of eye, ear, nose, and throat disorders.
                   </p>
-                  <p>
-                    <strong>Specialization:</strong> CARC (Certificate in Ayurvedic Research and Clinical Practice) from Chandigarh - 1 year intensive program
+                  <p className="mb-4">
+                    With over 5 years of clinical experience, Dr. Rajput has successfully treated a wide spectrum of patients using classical Ayurvedic approaches, personalized therapies, and holistic lifestyle interventions.
                   </p>
-                  <p>
-                    <strong>Experience:</strong> 6 years of clinical service with specialization in ENT and Panchakarma treatments
-                  </p>
-                  <p>
-                    <strong>Humanitarian Work:</strong> Helped over 12,000 patients outside her clinic with no charges, driven purely by compassion and service
-                  </p>
-                  <p>
-                    <strong>Geographic Reach:</strong> Served patients across multiple cities in India and internationally
+                  <div className="mt-6">
+                    <h4 className="font-semibold aged-text mb-3" style={{color: 'var(--accent-red)'}}>Key Areas of Clinical Expertise:</h4>
+                    <ul className="space-y-2 text-sm">
+                      <li>• Respiratory Disorders – asthma, allergic rhinitis, chronic sinusitis</li>
+                      <li>• Digestive Disorders – hyperacidity, IBS, constipation, indigestion</li>
+                      <li>• Gynecological Disorders – PCOD, menstrual irregularities, hormonal imbalances</li>
+                      <li>• Male Health Concerns – erectile dysfunction and premature ejaculation</li>
+                      <li>• Skin Diseases – acne, eczema, psoriasis, pigmentation</li>
+                      <li>• Renal & Urinary Disorders – UTIs, kidney stone prevention, chronic kidney health</li>
+                      <li>• Liver Disorders – fatty liver, sluggish metabolism, hepatomegaly</li>
+                      <li>• Metabolic & Lifestyle Disorders – obesity, hypothyroidism, fatigue syndromes</li>
+                    </ul>
+                  </div>
+                  <p className="mt-4 text-sm">
+                    She has completed the prestigious Certificate of Rashtriya Ayurveda Vidyapeeth (CRAV) and is highly trained in Panchakarma therapies including Nasya, Vamana, Basti, Netra Tarpana, Shirodhara, and specialized Kriyakalpa procedures for ENT conditions.
                   </p>
                 </div>
                 <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
