@@ -9,8 +9,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             <div className="flex items-center">
-              <div className="w-12 h-12 bg-accent-gold rounded-full flex items-center justify-center mr-4">
-                <span className="text-white text-xl font-bold">A</span>
+              <div className="w-12 h-12 mr-4">
+                <Image 
+                  src="/assets/images/logo.png"
+                  alt="Ayurveda Wellness Logo"
+                  width={48}
+                  height={48}
+                  className="rounded-full"
+                />
               </div>
               <div>
                 <h1 className="text-2xl font-bold aged-text" style={{color: 'var(--accent-red)'}}>

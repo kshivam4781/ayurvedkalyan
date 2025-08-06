@@ -18,6 +18,11 @@ const notoSansDevanagari = Noto_Sans_Devanagari({
 export const metadata: Metadata = {
   title: "Ayurveda Wellness - Ancient Wisdom for Modern Life",
   description: "Discover the 5,000-year-old science of Ayurveda. Experience holistic wellness through natural healing practices, dosha analysis, and therapeutic treatments.",
+  icons: {
+    icon: '/assets/images/logo.png',
+    shortcut: '/assets/images/logo.png',
+    apple: '/assets/images/logo.png',
+  },
 };
 
 export default function RootLayout({
