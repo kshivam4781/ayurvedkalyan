@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: '/ayurvedkalyan',
+  basePath: process.env.NODE_ENV === 'production' ? '/ayurvedkalyan' : '',
   trailingSlash: true,
   images: {
     unoptimized: true,

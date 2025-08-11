@@ -19,10 +19,14 @@ export const metadata: Metadata = {
   title: "Ayurveda Wellness - Ancient Wisdom for Modern Life",
   description: "Discover the 5,000-year-old science of Ayurveda. Experience holistic wellness through natural healing practices, dosha analysis, and therapeutic treatments.",
   icons: {
-    icon: '/assets/images/logo.png',
-    shortcut: '/assets/images/logo.png',
-    apple: '/assets/images/logo.png',
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/images/logo.png', type: 'image/png', sizes: '32x32' }
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
   },
+  manifest: '/site.webmanifest',
 };
 
 export default function RootLayout({
@@ -32,6 +36,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/images/logo.png" type="image/png" sizes="32x32" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="theme-color" content="#01828c" />
+      </head>
       <body
         className={`${crimsonText.variable} ${notoSansDevanagari.variable} antialiased`}
       >

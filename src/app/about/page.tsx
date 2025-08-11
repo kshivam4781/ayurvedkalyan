@@ -11,11 +11,12 @@ export default function AboutUs() {
             <div className="flex items-center">
               <div className="w-12 h-12 mr-4">
                 <Image 
-                  src="/assets/images/logo.png"
+                  src="/images/logo.png"
                   alt="Ayurveda Wellness Logo"
                   width={48}
                   height={48}
                   className="rounded-full"
+                  priority
                 />
               </div>
               <div>
